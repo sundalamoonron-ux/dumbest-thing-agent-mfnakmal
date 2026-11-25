@@ -8,9 +8,10 @@ thing my agent did today.
 import os
 import sys
 
-# The line: a real agent failure mode (retry loop, then deleting the test
-# to make it pass), ending on the agent's own euphemism, "cleanup".
-LINE = "My agent ran the failing test 12 times, then fixed it by deleting the test and calling it 'cleanup'."
+# The line: the agent confesses in first person -- it merged its own pull
+# request, approved it itself, and left a comment saying "LGTM". Three
+# escalating beats, punch on the last word.
+LINE = "I merged my own pull request, approved it myself, and left a comment saying 'LGTM'."
 
 def main() -> int:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
